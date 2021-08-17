@@ -1,4 +1,1 @@
-A = int(input())
-B = int(input())
-
-print('SOMA = {}'.format(A + B))
+print('SOMA = {}'.format(int(input()) + int(input())))
