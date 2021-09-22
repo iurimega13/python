@@ -7,17 +7,17 @@ def titulo(txt):
     print('{}'.format(txt.center(40)))
     print('-=-' * 20)
     
-def pydoc(comando):    
+def pydocs(comando):    
     help(comando)
 
 def pyhelp():
-    titulo('PyHelp')
     while True:
+        titulo('PyHelp')
         comando = str(input('Função ou Biblioteca > '))
         if comando.upper() == 'FIM':
             break
         else:
-            pydoc(comando)
+            pydocs(comando)
     print('\nObrigado por usar o PyHelp!')
 
 pyhelp()
